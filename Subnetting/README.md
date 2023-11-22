@@ -82,6 +82,7 @@ AREA DMZ
 - Calcoliamo la maschera **totale** della rete accorpata, ovvero dell'area
   - Se l'area contiene al suo interno soltanto 2 domini di collisione, allora la maschera totale è uguale alla maschera del dominio di collisione più piccolo - 1
   Esempio:
+
   ```console
     AREA RED
       CD7: 23
@@ -91,7 +92,9 @@ AREA DMZ
   $Mask(RED)=22$
   - Se l'area contiene al suo interno più di 2 domini di collisione, allora la maschera totale andrà calcolata come segue:
     - Disegniamo l'albero delle maschere di rete e saliamo fino alla radice
+    
     Esempio - Supponiamo di avere l'area `BLACK` contenente al suo interno i seguent `CD`
+
     ```console
     AREA BLACK
       CD101: 24
