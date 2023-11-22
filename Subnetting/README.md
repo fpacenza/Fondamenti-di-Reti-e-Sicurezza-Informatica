@@ -81,7 +81,7 @@ AREA DMZ
 
 - Calcoliamo la maschera **totale** della rete accorpata, ovvero dell'area
   - Se l'area contiene al suo interno soltanto 2 domini di collisione, allora la maschera totale è uguale alla maschera del dominio di collisione più piccolo - 1
-  Esempio:
+  -  Esempio:
 
   ```console
     AREA RED
