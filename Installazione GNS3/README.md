@@ -7,8 +7,8 @@
 - **RAM:** >=8GB
 - **CPU:** >=4 cores
 - **Virtualizzazione:** 
-  - **Windows:** VT-x e/o HyperV abilitato nel BIOS Extra:
-  - **Linux:** Supporto KVM, vedi qui
+  - **Windows:** VT-x e/o HyperV abilitato nel BIOS
+  - **Linux:** Supporto KVM
 - **Immagine disco:** [Download](https://drive.usercontent.google.com/download?id=1vp3_9nlqoCIy4Kll0GyJmJeXQ7CA5HsM&export=download&authuser=1&confirm=t&uuid=2a3c8d61-c3e7-4cc3-9250-6c47d0ccc672&at=APZUnTVZOAR71r9-9OsHKS_rL-6o:1700249474615)
 
 ## Installazione del software GNS3

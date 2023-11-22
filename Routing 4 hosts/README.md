@@ -46,12 +46,12 @@
 - **GW:** `10.0.1.1`
 
 #### Configrazione tramite GNS3
-- Tasto destro del mouse su `PC1`
+- Tasto destro del mouse su `PC2`
 - Selezionare `edit config`
 - Inserire la seguente riga:
  `ip 10.0.1.2 255.255.255.0 10.0.1.1`
 - Cliccare su `Save`
-- Tasto destro del mouse su `PC1`
+- Tasto destro del mouse su `PC2`
 - Selezionare `Reload`
 
 
