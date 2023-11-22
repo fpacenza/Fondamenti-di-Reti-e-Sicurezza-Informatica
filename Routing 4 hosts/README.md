@@ -70,6 +70,7 @@
 #### Configrazione tramite terminale della VM
 - Aprire il file `/etc/network/interfaces` usando `pico` o `nano` e configurare le interfacce come segue:
 
+```console
       auto eth0
       iface eth0 inet static
         network 10.0.2.0
@@ -83,6 +84,10 @@
         netmask 255.255.255.0
         address 10.0.0.1
         broadcast 10.0.0.255
+      
+      # Aggiunta della rotta verso 10.0.1.0/24
+      post-up route add -net 10.0.1.0 netmask 255.255.255.0 gw 10.0.2.2 dev eth0
+```
 
 - Salvare il file ed uscire dall'editor con `CTRL+X`
 - Riavviare il servizio di networking con il comando `service networking restart` 
@@ -103,6 +108,7 @@
 #### Configrazione tramite terminale della VM
 - Aprire il file `/etc/network/interfaces` usando `pico` o `nano` e configurare le interfacce come segue:
 
+```console
       auto eth0
       iface eth0 inet static
         network 10.0.2.0
@@ -116,6 +122,10 @@
         netmask 255.255.255.0
         address 10.0.1.1
         broadcast 10.0.1.255
+
+      # Aggiunta della rotta verso 10.0.0.0/24
+      post-up route add -net 10.0.0.0/24 gw 10.0.2.1 dev eth0
+```
 
 - Salvare il file ed uscire dall'editor con `CTRL+X`
 - Riavviare il servizio di networking con il comando `service networking restart`
