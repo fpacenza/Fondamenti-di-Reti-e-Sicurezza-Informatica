@@ -28,7 +28,7 @@ Assegnare una maschera ad ogni dominio di collisione.
 **Attenzione:** in questa fase non importa l'ordine in cui prendiamo in considerazione i domini di collisione
 
 - Esaminiamo il primo dominio di collisione, e.g., `CD1` e osserviamo il valore `minIP`, ovvero il numero di indirizzi ip richiesti per un determinato dominio di collisione
-- Assegnamo una maschera di rete che soddisfi il valore `minIP` e che sia la più piccola possibile
+- Assegniamo una maschera di rete che soddisfi il valore `minIP` e che sia la più piccola possibile
 - Risolviamo la seguente disequazione `(2^x - 2) >= minIP` e otteniamo il valore `x` che rappresenta il numero di bit da assegnare alla sotto-rete
 
 $CD1:$
@@ -243,7 +243,7 @@ Se una delle verifiche elencate non risultasse corretta, procedere con il ricalc
 ### Step 6
 Una volta suddivisi **TUTTI** i domini di collisione contenuti all'interno della **STESSA** area, procediamo con il calcolo dell'indirizzo di rete e del broadcast dell'area stessa
 
-- Assegnamo il `network` all'area
+- Assegniamo il `network` all'area
   - Il `network` dell'area sarà uguale all'indirizzo IP del `network` del dominio di collisione con maschera più piccola
 
 ```console
