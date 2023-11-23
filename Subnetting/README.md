@@ -206,6 +206,14 @@ A questo punto, procediamo con il calcolo dell'indirizzo di rete e del broadcst 
     Broadcast: 10.0.1.255
   ```
 
+### Step 5.1 - Verifica della correttezza del calcolo di `network` e `broadcast`
+1. Il `network` deve terminare _sempre_ con una cifra **pari**
+2. Il `broadcast` deve terminare _sempre_ con una cifra **dispari**
+3. Il `network` deve essere minore del `broadcast`
+
+Se una delle verifiche elencate non risultasse corretta, procedere con il ricalcolo di `network` e `broadcast`
+
+### Step 5.2
 - Proseguiamo con la suddivisione di tutti gli altri domini di collisione contenuti all'interno della stessa area di `CD7`, ovvero dell'area `RED`
 
 - Assegnare il `network` al dominio di collisione `CD6`
@@ -253,7 +261,7 @@ Una volta suddivisi **TUTTI** i domini di collisione contenuti all'interno della
 ```
 
 ### Step 7
-- Da ora è possibile passare alla suddivisione dei domini di collisione contenuti all'interno della **SECONDA** area, ovvero l'area `DMZ`
+- Ora è possibile passare alla suddivisione dei domini di collisione contenuti all'interno della **SECONDA** area, ovvero l'area `DMZ`
 
 - Gli step da seguire sono identici a quelli visti in precedenza con l'unica differenza che, quando si passa dal suddividere un dominio di collisione di un'area diversa da quella precedente, il `network` dovrà essere calcolato nel seguente modo:
   
@@ -266,3 +274,71 @@ Una volta suddivisi **TUTTI** i domini di collisione contenuti all'interno della
     CD8 --> Network = broadcast(AREA RED) + 1
     Network: 10.0.4.0
   ```
+<<<<<<< HEAD
+=======
+
+- A questo punto, una volta terminata l'intera suddivisione, dovremmo ritrovarci con i seguenti valori di `network`, `netmask` e `broadcast` per i vari domini di collisione
+
+```console
+  AREA RED
+    Network: 10.0.0.0/22
+    Netmask: 255.255.252.0
+    Broadcast: 10.0.3.255
+
+    CD7
+      Network: 10.0.0.0/23
+      Netmask: 255.255.254.0
+      Broadcast: 10.0.1.255
+
+    CD6
+      Network: 10.0.2.0/24
+      Netmask: 255.255.255.0
+      Broadcast: 10.0.2.255
+
+  AREA DMZ
+    Network: 10.0.4.0/23
+    Netmask: 255.255.254.0
+    Broadcast: 10.0.5.255
+
+    CD8
+      Network: 10.0.4.0/24
+      Netmask: 255.255.255.0
+      Broadcast: 10.0.4.255
+
+    CD9
+      Network: 10.0.5.0/25
+      Netmask: 255.255.255.128
+      Broadcast: 10.0.5.127
+
+  AREA GREEN
+    Network: 10.0.6.0/24
+    Netmask: 255.255.255.0
+    Broadcast: 10.0.6.255
+
+    CD1
+      Network: 10.0.6.0/24
+      Netmask: 255.255.255.0
+      Broadcast: 10.0.6.255
+
+    CD2
+      Network: 10.0.7.0/30
+      Netmask: 255.255.255.252
+      Broadcast: 10.0.7.3
+
+    CD4
+      Network: 10.0.7.4/30
+      Netmask: 255.255.255.252
+      Broadcast: 10.0.7.7
+
+    CD5
+      Network: 10.0.7.8/30
+      Netmask: 255.255.255.252
+      Broadcast: 10.0.7.11
+
+    CDTAP
+      Network: 10.0.7.12/30
+      Netmask: 255.255.255.252
+      Broadcast: 10.0.7.15
+```
+
+>>>>>>> 2c956c5 (aggiunta versione finale subnetting)
