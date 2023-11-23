@@ -274,8 +274,6 @@ Una volta suddivisi **TUTTI** i domini di collisione contenuti all'interno della
     CD8 --> Network = broadcast(AREA RED) + 1
     Network: 10.0.4.0
   ```
-<<<<<<< HEAD
-=======
 
 - A questo punto, una volta terminata l'intera suddivisione, dovremmo ritrovarci con i seguenti valori di `network`, `netmask` e `broadcast` per i vari domini di collisione
 
@@ -340,5 +338,3 @@ Una volta suddivisi **TUTTI** i domini di collisione contenuti all'interno della
       Netmask: 255.255.255.252
       Broadcast: 10.0.7.15
 ```
-
->>>>>>> 2c956c5 (aggiunta versione finale subnetting)
