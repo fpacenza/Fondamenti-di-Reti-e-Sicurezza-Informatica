@@ -83,7 +83,6 @@ post-up route add -net 10.0.0.0/22 gw 10.0.7.2 dev eth2
 # Rotta per raggiungere CD2
 post-up route add default gw 10.0.7.5 dev eth0
 
-
 # Rotta per raggiungere Area RED
 post-up route add -net 10.0.0.0/22 gw 10.0.7.10 dev eth1
 ```
