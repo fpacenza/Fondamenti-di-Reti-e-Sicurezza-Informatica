@@ -5,6 +5,7 @@
 
 ## Obiettivo
 - Configurare la connettività Internet del laboratorio **GNS3** tramite l'uso di una interfaccia di rete virtuale di tipo **TAP**
+- Configurare il file `/etc/hosts` di ogni host della topologia in modo tale che sia possibile effettuare il ping tra gli host tramite il loro nome di dominio
 
 ## Topologia della rete
 ![alt text](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/blob/main/Routing/project_topology_gns3.png?raw=true)
@@ -100,6 +101,47 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 64 bytes from 8.8.8.8: icmp_seq=5 ttl=117 time=31.9 ms
 
 --- 8.8.8.8 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4008ms
+rtt min/avg/max/mdev = 31.946/34.427/37.642/2.618 ms                                                
+```
+
+
+## Configurazione file /etc/hosts
+Il file `/etc/hosts` è un file di configurazione che permette di associare nomi di dominio ad indirizzi IP. In questo modo, è possibile effettuare il ping tra gli host della nostra topologia utilizzando il loro nome di dominio. Per configurare il file `/etc/hosts` di ogni host della topologia, seguire i seguenti passaggi
+
+- Avviare il terminale di `F1` e digitare il seguente comando
+```console
+pico /etc/hosts
+```
+- Aggiungere le seguenti righe al file `/etc/hosts`
+```console
+10.0.7.2    R1
+10.0.7.6    F2
+10.0.7.10   R2
+```
+
+- Salvare le modifiche (`CTRL+O`)
+- Chiudere l'editor di testo (`CTRL+X`)
+- Ripetere i passaggi precedenti per ogni host della topologia (`F1`, `F2`, `R1` ed `R2`) avendo cura di utilizzare gli indirizzi IP corretti per ogni host
+- Testare il funzionamento del file `/etc/hosts`
+```console
+ping -c5 R1
+```
+- L'output atteso è il seguente
+```console
+```console
+ping -c5 10.0.7.2
+```
+- L'output atteso è il seguente
+```console
+PING 10.0.7.2 (10.0.7.2) 56(84) bytes of data.
+64 bytes from 10.0.7.2: icmp_seq=1 ttl=117 time=32.8 ms
+64 bytes from 10.0.7.2: icmp_seq=2 ttl=117 time=37.6 ms
+64 bytes from 10.0.7.2: icmp_seq=3 ttl=117 time=32.1 ms
+64 bytes from 10.0.7.2: icmp_seq=4 ttl=117 time=37.6 ms
+64 bytes from 10.0.7.2: icmp_seq=5 ttl=117 time=31.9 ms
+
+--- 10.0.7.2 ping statistics ---
 5 packets transmitted, 5 received, 0% packet loss, time 4008ms
 rtt min/avg/max/mdev = 31.946/34.427/37.642/2.618 ms                                                
 ```
