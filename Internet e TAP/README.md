@@ -18,7 +18,7 @@ Nella nostra topologia, useremo una interfaccia di rete virtuale da nome **tap0*
 **Attenzione:** Tutti i comandi che seguono devono essere eseguiti all'interno del terminale del vostro computer locale e **NON** all'interno di **GNS3**
 
 - Installare il pacchetto **uml-utilities** con il seguente comando
-```bash
+```console
 sudo apt install uml-utilities
 ```
 
