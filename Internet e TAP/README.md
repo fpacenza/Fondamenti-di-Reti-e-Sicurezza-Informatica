@@ -80,7 +80,7 @@ sudo sh tap.sh
 - Click destro sul dispositivo `Cloud` e selezionare `Configure`
 - Recarsi nella scheda `TAP Interfaces` e se non è già presente la scheda di rete `tap0` cliccare su `Add` per aggiungere `tap0`
 - L'interfaccia di configurazione dovrà apparire come in figura
-![alt text](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/blob/main/Internet%20e%20TAP/cloud_confiuration.png?raw=true)
+![alt text](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/blob/main/Internet%20e%20TAP/cloud_configuration.png?raw=true)
 - Cliccare su `OK` per salvare le modifiche
 - Cliccare su `Add link` <img src="https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/blob/main/Routing/link.png?raw=true" width="25"> nel menù a sinistra in GNS3 e collegare l'interfaccia `tap0` del dispositivo `Cloud` con l'interfaccia `eth0` del firewall `F1`
 
