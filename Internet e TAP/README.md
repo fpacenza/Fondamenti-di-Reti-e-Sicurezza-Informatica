@@ -66,7 +66,7 @@ sysctl -w net.ipv4.ip_forward=1
 route add -net 10.0.0.0/21 gw 10.0.7.14 dev tap0
 ```
 
-**ATTENZIONE:** È disponibile [QUI](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/blob/main/Internet%20e%20TAP/tap.sh?raw=true) lo script ``tap.sh`` che esegue tutti i comandi precedenti in modo automatico. Per eseguire lo script, aprire il terminale ed eseguire lo script con il seguente comandi.
+**ATTENZIONE:** È disponibile [QUI](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/blob/main/Internet%20e%20TAP/tap.sh?raw=true) lo script ``tap.sh`` che esegue tutti i comandi precedenti in modo automatico. Per eseguire lo script, aprire il terminale ed eseguire lo script con il seguente comando.
 *Abbi cura di cambiare i parametri relativi all tua scheda di rete e alle rotte della topologia.*
 ```bash
 sudo sh tap.sh
