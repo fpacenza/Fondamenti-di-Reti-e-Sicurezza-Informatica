@@ -4,7 +4,7 @@
 - Aver completato l'esercitazione [Routing Laboratorio](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/tree/main/Routing)
 
 ## Obiettivo
-- Configurare i router e i firewall in modo tale che sia possibile effettuare il routing tra le varie aree della rete
+- Configurare la connettività Internet del laboratorio **GNS3** tramite l'uso di una interfaccia di rete virtuale di tipo **TAP**
 
 ## Topologia della rete
 ![alt text](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/blob/main/Routing/project_topology_gns3.png?raw=true)

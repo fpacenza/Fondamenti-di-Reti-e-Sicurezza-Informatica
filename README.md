@@ -6,3 +6,4 @@
 * [Subnetting Laboratorio](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/tree/main/Subnetting)
 * [Routing Laboratorio](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/tree/main/Routing)
 * [Internet e TAP](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/tree/main/Internet%20e%20TAP)
+* [Collegamento SSH e Backup](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/tree/main/SSH%20e%20Backup)
