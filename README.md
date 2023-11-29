@@ -1,4 +1,4 @@
-# Fondamenti-di-Reti-e-Sicurezza-Informatica# Network And Security
+# Fondamenti-di-Reti-e-Sicurezza-Informatica
 
 ## Esercitazioni Guidate
 * [Installazione di GNS3](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/tree/main/Installazione%20GNS3)
