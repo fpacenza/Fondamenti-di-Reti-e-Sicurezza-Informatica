@@ -23,12 +23,12 @@ sudo apt install uml-utilities
 ```
 
 - Autenticarsi come amministarore con la password di root
-```bash
+```console
 sudo su
 ```
 
 - Aprire il terminale e digitare i seguenti comandi
-```bash
+```console
 # Crea interfaccia di rete tap0
 tunctl -g netdev -t tap0
 
@@ -40,12 +40,12 @@ ifconfig tap0 up
 ```
 
 - Verificare che l'interfaccia di rete **tap0** sia stata creata e configurata correttamente
-```bash
+```console
 ifconfig tap0
 ```
 
 - Crea regole di firewalling in grado di mascherare e rediriare il traffico in uscita e in entrata dall'interfaccia di rete **tap0**
-```bash
+```console
 # Crea le regole di firewalling
 # Attenzione: cambiare *wlan0* con il nome della propria scheda di rete attualmente connessa alla rete internet
 iptables -t nat -F
@@ -57,18 +57,18 @@ iptables -A FORWARD -i tap0 -j ACCEPT
 ```
 
 - Abilitare il forwarding su host locale 
-```bash
+```console
 sysctl -w net.ipv4.ip_forward=1
 ```
 
 - Aggiunge le rotte alle varie subnets
-```bash
+```console
 route add -net 10.0.0.0/21 gw 10.0.7.14 dev tap0
 ```
 
 **ATTENZIONE:** È disponibile [QUI](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/blob/main/Internet%20e%20TAP/tap.sh?raw=true) lo script ``tap.sh`` che esegue tutti i comandi precedenti in modo automatico. Per eseguire lo script, aprire il terminale ed eseguire lo script con il seguente comando.
 *Abbi cura di cambiare i parametri relativi all tua scheda di rete e alle rotte della topologia.*
-```bash
+```console
 sudo sh tap.sh
 ```
 
@@ -87,11 +87,11 @@ sudo sh tap.sh
 ### Step 3: Controllo della connessione ad internet
 - Avviare la topologia
 - Avviare il terminale di un host a scelta nella topologia e verificare che sia possibile effettuare il ping verso **Internet**
-```bash
+```console
 ping -c5 8.8.8.8
 ```
 - L'output atteso è il seguente
-```bash
+```console
 PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 64 bytes from 8.8.8.8: icmp_seq=1 ttl=117 time=32.8 ms
 64 bytes from 8.8.8.8: icmp_seq=2 ttl=117 time=37.6 ms
