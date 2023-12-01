@@ -3,7 +3,9 @@
 ## Prerequisiti
 - `GNS3`
 - `QEMU VMs` 
-- `Wireshark` 
+- `Wireshark`
+- Aver completato l'esercitazione [Installazione GNS3](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/tree/main/Installazione%20GNS3)
+
 
 ## Obiettivo
 - Suddividere la topologia del progetto ed accorpare eventuali sotto-reti in una unica rete 
