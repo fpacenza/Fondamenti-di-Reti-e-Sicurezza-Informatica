@@ -3,7 +3,8 @@
 ## Prerequisiti
 - `GNS3`
 - `QEMU VMs` 
-- `Wireshark` 
+- `Wireshark`
+- Aver completato l'esercitazione [Installazione GNS3](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/tree/main/Installazione%20GNS3)
 
 ## Obiettivo
 - Configurare un laboratorio in grado di effettuare il routing dei pacchetti dall'host `PC1` all'host `PC2` passando per i router `F1` ed `F2`
