@@ -4,8 +4,10 @@
 - Aver completato l'esercitazione [Internet e TAP](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/tree/main/Internet%20e%20TAP)
 
 ## Obiettivo
-- Configurare i router e i firewall in modo tale che sia possibile effettuare il routing tra le varie aree della rete
-
+- Installare un server `ssh` sui router e sui firewall
+- Connettersi dal computer locale alle `VMs` tramite `ssh`
+- Eseguire il backup dei file di configurazione tramite `ssh` ed `sshfs`
+- 
 ## Topologia della rete
 ![alt text](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/blob/main/Routing/project_topology_gns3.png?raw=true)
 
