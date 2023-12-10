@@ -47,10 +47,10 @@ Ogni catene ha una policy, cioè un'azione predefinita da eseguire quando tutti 
 ## Regole di iptables
 Ogni catena iptables è composta da un insieme di `regole di filtraggio`, che vengono applicate in sequenza a ogni pacchetto di rete che passa attraverso la catena.
 
+Le regole di iptables sono **organizzate in modo gerarchico**, in cui le regole più specifiche hanno la precedenza su quelle più generiche. In questo modo, è possibile creare politiche di filtraggio del traffico di rete personalizzate e granulari, in base alle esigenze specifiche della rete e dell’applicazione.
+
 ### Filtri
 Le regole iptables sono composte da una serie di `criteri di filtraggio`, come l’indirizzo **IP sorgente** e **destinazione**, il **protocollo** di rete, il **numero di porta**, lo **stato del pacchetto** e altre caratteristiche dei pacchetti di rete.
-
-Le regole di iptables sono **organizzate in modo gerarchico**, in cui le regole più specifiche hanno la precedenza su quelle più generiche. In questo modo, è possibile creare politiche di filtraggio del traffico di rete personalizzate e granulari, in base alle esigenze specifiche della rete e dell’applicazione.
 
 ### Targets
 I target rappresentano l’azione che deve essere eseguita sui pacchetti di rete che corrispondono ad una determinata regola di filtraggio. I target di iptables possono essere di due tipi:
