@@ -2,6 +2,7 @@
 
 ## Prerequisiti
 - Aver completato l'esercitazione [Internet e TAP](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/tree/main/Internet%20e%20TAP)
+- Aver completato il modulo [Netfilter - Concetti Base](https://github.com/fpacenza/Fondamenti-di-Reti-e-Sicurezza-Informatica/tree/main/Netfilter)
 
 ## Obiettivo
 ### Configurare i firewall `F1` ed `F2` così da ottenere la seguente connettività tra le diverse aree:
