@@ -40,7 +40,7 @@ Ognuna di queste tabelle è composta da alcune catene predefinite. Queste catene
 - **POSTROUTING** le regole di questa catena si applicano ai pacchetti in quanto lasciano semplicemente l’interfaccia di rete. Questa catena è presente nelle tabelle **nat** e **mangle**.
 
 ## Policy di default
-Ogni catene ha una policy, cioè un'azione predefinita da eseguire quando tutti gli altri controlli della catena hanno fallito nel riconoscere se il dato era buono o meno. Si può optare per una policy di default più permissiva (`ACCEPT`) o più restrittiva (`DROP`), a seconda delle esigenze.
+Ogni catene ha una policy, cioè un'azione predefinita da eseguire quando tutti gli altri controlli della catena hanno fallito nel riconoscere se il dato era buono o meno. Si può optare per una policy di default più **permissiva** (`ACCEPT`) o più **restrittiva** (`DROP`), a seconda delle esigenze.
 
 
 
