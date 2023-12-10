@@ -33,11 +33,11 @@ Netfilter ha 4 tabelle:
 ## Catene di iptables
 Ognuna di queste tabelle è composta da alcune catene predefinite. Queste catene permettono di filtrare i pacchetti in vari punti. L’elenco delle catene che iptables fornisce sono:
 
-`PREROUTING`: le regole di questa catena si applicano ai pacchetti appena arrivati sull’interfaccia di rete. Questa catena è presente nelle tabelle **nat**, **mangle** e **raw**.
-`INPUT`: le regole di questa catena si applicano ai pacchetti appena prima di essere dati a un processo locale - **dati in ingresso sull'host corrente**. Questa catena è presente nelle tabelle **mangle** e **filter**.
-`OUTPUT`: le regole qui si applicano ai pacchetti subito dopo che sono stati prodotti da un processo - **dati in uscita sull'host corrente**. Questa catena è presente nelle tavole **raw**, **mangle**, **nat** e **filter**.
-`FORWARD`: le regole qui si applicano a qualsiasi pacchetto che viene **instradato attraverso l’host corrente**. Questa catena è presente solo nelle tabelle **mangle** e **filter**.
-`POSTROUTING`: le regole di questa catena si applicano ai pacchetti in quanto lasciano semplicemente l’interfaccia di rete. Questa catena è presente nelle tabelle **nat** e **mangle**.
+- `PREROUTING`: le regole di questa catena si applicano ai pacchetti appena arrivati sull’interfaccia di rete. Questa catena è presente nelle tabelle **nat**, **mangle** e **raw**.
+- `INPUT`: le regole di questa catena si applicano ai pacchetti appena prima di essere dati a un processo locale - **dati in ingresso sull'host corrente**. Questa catena è presente nelle tabelle **mangle** e **filter**.
+- `OUTPUT`: le regole qui si applicano ai pacchetti subito dopo che sono stati prodotti da un processo - **dati in uscita sull'host corrente**. Questa catena è presente nelle tavole **raw**, **mangle**, **nat** e **filter**.
+- `FORWARD`: le regole qui si applicano a qualsiasi pacchetto che viene **instradato attraverso l’host corrente**. Questa catena è presente solo nelle tabelle **mangle** e **filter**.
+- `POSTROUTING`: le regole di questa catena si applicano ai pacchetti in quanto lasciano semplicemente l’interfaccia di rete. Questa catena è presente nelle tabelle **nat** e **mangle**.
 
 ## Policy di default
 Ogni catene ha una policy, cioè un'azione predefinita da eseguire quando tutti gli altri controlli della catena hanno fallito nel riconoscere se il dato era buono o meno. Si può optare per una policy di default più permissiva (`ACCEPT`) o più restrittiva (`DROP`), a seconda delle esigenze.
