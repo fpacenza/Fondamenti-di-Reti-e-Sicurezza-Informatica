@@ -53,7 +53,7 @@ Le regole di iptables sono **organizzate in modo gerarchico**, in cui le regole 
 Le regole iptables sono composte da una serie di `criteri di filtraggio`, come l’indirizzo **IP sorgente** e **destinazione**, il **protocollo** di rete, il **numero di porta**, lo **stato del pacchetto** e altre caratteristiche dei pacchetti di rete.
 
 ### Targets
-I target rappresentano l’azione che deve essere eseguita sui pacchetti di rete che corrispondono ad una determinata regola di filtraggio. I target di iptables possono essere di due tipi:
+I target rappresentano l’azione che deve essere eseguita sui pacchetti di rete che corrispondono ad una determinata regola di filtraggio. I target di iptables possono essere di diversi tipi:
 
 - **ACCEPT:** lascia passare il pacchetto
 
