@@ -104,7 +104,7 @@ iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 2525 -j DNAT --to 10.0.5.2
  post-up sh /etc/network/firewall.sh
 ```
 
-## Configurazione del Firewall `F1`
+## Configurazione del Firewall `F2`
 - Avviamo il progetto tramite `GNS3` ed colleghiamoci al terminale del firewall `F1`
 - Creiamo un nuovo file dal nome `firewall.sh` nella cartella `/etc/network`
 ```console
