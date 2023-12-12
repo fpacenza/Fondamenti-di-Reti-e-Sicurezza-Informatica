@@ -33,9 +33,10 @@ iptables -A allGreen -m state --state ESTABLISHED,RELATED -j ACCEPT
 iptables -A DMZred -j ACCEPT
 iptables -A redDMZ -m state --state ESTABLISHED,RELATED -j ACCEPT
 
-
+## ATTENZIONE: Queste regole, nel caso specifico, sono di esempio e non sono realmente utili ad accettare 
+## solo connessioni icmp dal momento che la catena dmzRed specificata in precedenza accetta tutte le connessioni
 # Abilitare nuove richieste (echo request 8) ICMP da RED verso DMZ
-iptables -A redDMZ -p icmp --icmp-type 8 -j ACCEPT
+# iptables -A redDMZ -p icmp --icmp-type 8 -j ACCEPT
 
 # Abilitare le risposte (echo reply 0) ICMP da DMZ  verso RED
-iptables -A DMZred -p icmp --icmp-type 0 -j ACCEPT
+# iptables -A DMZred -p icmp --icmp-type 0 -j ACCEPT
