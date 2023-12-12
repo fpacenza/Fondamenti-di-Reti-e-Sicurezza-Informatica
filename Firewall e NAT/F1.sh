@@ -41,6 +41,7 @@ iptables -A FORWARD -p tcp --sport 22 -i eth2 -o eth0 -s 10.0.7.6 -m state --sta
 
 
 # Natting
+## DNAT
 ## Portforwarding della porta 80 su 10.0.5.3
 iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j DNAT --to-destination 10.0.5.3
 
@@ -49,3 +50,16 @@ iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 4443 -j DNAT --to 10.0.4.2:
 
 ## Portforwarding della porta 2525 su 10.0.5.2
 iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 2525 -j DNAT --to 10.0.5.2
+
+## SNAT
+## Cambia l'indirizzo sorgente in 10.0.0.1
+# iptables -t nat -A POSTROUTING -o eth0 -j SNAT --to 10.0.0.1
+
+## Cambia l'indirizzo sorgente in 10.0.0.1, 10.0.0.2 oppure 10.0.0.3
+# iptables -t nat -A POSTROUTING -o eth0 -j SNAT --to 10.0.0.1-10.0.0.3
+
+## Cambia l'indirizzo sorgente in 10.0.0.1, e la porta in 8080
+# iptables -t nat -A POSTROUTING -p tcp -o eth0 -j SNAT --to 10.0.0.1:8080
+
+## Cambia l'indirizzo sorgente in 10.0.0.1, porte 1-1023
+# iptables -t nat -A POSTROUTING -p tcp -o eth0 -j SNAT --to 10.0.0.1:1-1023
