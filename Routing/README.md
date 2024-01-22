@@ -134,7 +134,7 @@ A questo punto, la configurazione della topologia è terminata e possiamo proced
 - Apriamo la console del computer `PC1` e verifichiamo che sia possibile effettuare il ping verso tutti gli altri host della rete
 - Ripetiamo il controllo della connettività di rete per tutti gli altri host della rete
 
-## Cosa fare se lerichieste di ping non vanno a buon fine?
+## Cosa fare se le richieste di ping non vanno a buon fine?
 1. Esaminiamo il messaggio di errore ottenuto (si tratta di timeout, di host unreachable, di network unreachable, ecc...)
 2. Verifichiamo che le tabelle di routing di tutti i dispositivi siano state configurate correttamente
 3. Verifichiamo che le schede di rete di tutti i dispositivi siano state configurate correttamente
